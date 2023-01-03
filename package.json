@@ -1,17 +1,14 @@
 {
-  "name": "getx-generator",
-  "displayName": "GetX Generator",
-  "description": "GetX Generator will generate pattern and files",
-	"publisher": "HuongTran",
+  "name": "star-getx-addpage",
+  "displayName": "Star GetX Add Page",
+  "description": "GetX Generator will generate files",
+	"publisher": "MorningStar",
   "version": "0.1.0",
   "license": "MIT",
   "engines": {
     "vscode": "^1.65.0"
   },
-  "bugs": {
-    "url": "https://github.com/tranhuongk/getx-generator/issues",
-    "email": "huongtv.uet@gmail.com"
-  },
+  
   "icon": "assets/logo.webp",
   "categories": [
     "Snippets",
@@ -25,16 +22,12 @@
 		"getx"
   ],
   "activationEvents": [
-    "onCommand:getx-generator.getxInstall",
-    "onCommand:getx-generator.getxAddPage"
+    
+    "onCommand:getx.getxAddPage"
   ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "getx-generator.getxInstall",
-        "title": "GetX: Generate base (Install)"
-      },
       {
         "command": "getx-generator.getxAddPage",
         "title": "GetX: Generate files (Add page)"
@@ -62,6 +55,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tranhuongk/getx-generator.git"
+    "url": "https://github.com/MorningStarJ/getx-generator.git"
   }
 }

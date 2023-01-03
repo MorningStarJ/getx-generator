@@ -1,5 +1,5 @@
 const vscode = require('vscode');
-const getxInstall = require('./src/get-install.js');
+
 const getxAddPage = require('./src/get-add-page.js');
 
 /**
@@ -7,10 +7,8 @@ const getxAddPage = require('./src/get-add-page.js');
  */
 function activate(context) {
 
-	let getxInstallCmd = vscode.commands.registerCommand('getx-generator.getxInstall', getxInstall.getxInstall);
 	let getxAddPageCmd = vscode.commands.registerCommand('getx-generator.getxAddPage', getxAddPage.getxAddPage);
 
-	context.subscriptions.push(getxInstallCmd);
 	context.subscriptions.push(getxAddPageCmd);
 }
 
